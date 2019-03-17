@@ -1,0 +1,37 @@
+﻿<!DOCTYPE>
+<!-- This code is for demonstration purposes only.  You should not hotlink to Github, Rawgit, or files from the Cytoscape.js documentation in your production apps. -->
+<html>
+  <head>
+    <title>Edge types demo</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <link href="style.css" rel="stylesheet" />
+
+    <!-- For loading external data files -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise,fetch"></script>
+    <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+    <script src="https://unpkg.com/popper.js@1.14.7/dist/umd/popper.js"></script>
+    <script src="cytoscape-popper.js"></script>
+    <script src="https://unpkg.com/tippy.js@4.0.1/umd/index.all.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@4.0.1/index.css" />
+
+    <!-- for testing with local version of cytoscape.js -->
+    <!--<script src="../cytoscape.js/build/cytoscape.js"></script>-->
+  </head>
+  <body>
+    <h1>CTL Model Checker Train</h1>
+    <h1> </h1>
+    <div id="cy"></div>
+    <!-- Load application code at the end to ensure DOM is loaded -->
+    <script src="code.js"></script>
+    <div id="formulas">
+      <h1> F_1 = p0 </h1>
+      <h1> F_2 = !p0 </h1>
+      <h1> F_3 = EX(!(p0)) </h1>
+      <h1> F_4 = q1 </h1>
+      <h1> F_5 = t2 </h1>
+      <h1> F_6 = q1 OR t2 </h1>
+      <h1> F_7 = AF(q1 OR t2) </h1>
+      <h1> F_8 = E(EX(!p0) U AF(q1 OR t2)) </h1>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+[ 
+  { "data": { "id": "n0", "type": "S0", "label": "S0"} }, 
+  { "data": { "id": "n1", "type": "S1", "label": "S1 (p)" } }, 
+  { "data": { "id": "n2", "type": "S2", "label": "S2 (p)" } }, 
+  { "data": { "id": "n3", "type": "S3", "label": "S3 (p)"} }, 
+  { "data": { "id": "n4", "type": "S4", "label": "S4 (p,q)"} }, 
+  { "data": { "id": "n5", "type": "S5", "label": "S5 (p,r)"} },
+  { "data": { "id": "e1", "source": "n0", "target": "n1", "arrow": "triangle" } },  
+  { "data": { "id": "e0", "source": "n2", "target": "n1", "arrow": "triangle" } }, 
+  { "data": { "id": "e3", "source": "n5", "target": "n2", "arrow": "triangle" } }, 
+  { "data": { "id": "e4", "source": "n4", "target": "n5", "arrow": "triangle" } }, 
+  { "data": { "id": "e5", "source": "n4", "target": "n0", "arrow": "triangle" } }, 
+  { "data": { "id": "e6", "source": "n4", "target": "n3", "arrow": "triangle" } }, 
+  { "data": { "id": "e7", "source": "n3", "target": "n5", "arrow": "triangle" } }, 
+  { "data": { "id": "e8", "source": "n2", "target": "n3", "arrow": "triangle" } }, 
+  { "data": { "id": "e9", "source": "n1", "target": "n4", "arrow": "triangle" } }, 
+  { "data": { "id": "e10", "source": "n0", "target": "n3", "arrow": "triangle" } }, 
+  { "data": { "id": "e11", "source": "n3", "target": "n0", "arrow": "triangle" } }
+]
