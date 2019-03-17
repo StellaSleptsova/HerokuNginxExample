@@ -2,8 +2,8 @@
 <!-- This code is for demonstration purposes only.  You should not hotlink to Github, Rawgit, or files from the Cytoscape.js documentation in your production apps. -->
 <html>
   <head>
-    <title>Edge types demo</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <title>Model Checker Algorithm Training</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="style.css" rel="stylesheet" />
 
     <!-- For loading external data files -->
@@ -17,21 +17,102 @@
     <!-- for testing with local version of cytoscape.js -->
     <!--<script src="../cytoscape.js/build/cytoscape.js"></script>-->
   </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    /* Style the header */
+    header {
+      background-color: #75bbfd;
+      padding: 30px;
+      height: 20%;
+      text-align: center;
+      font-size: 35px;
+      color: #000305;
+    }
+    
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: right;
+      width: 30%;
+      height: 70%;
+      background: #ccc;
+      padding: 20px;
+    }
+    
+    .article {
+      position: absolute;
+      float: right;
+      padding: 20px;
+      width: 70%; 
+      background-color: #f1f1f1;
+    }
+
+    section {
+      position: relative; 
+    }
+    
+    /* Clear floats after the columns */
+    section:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Style the footer */
+    footer {
+      background-color: #75bbfd;
+      padding: 10px;
+      height: 10%;
+      text-align: center;
+      color: #000305;
+    }
+    
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+      }
+    }
+    </style>
   <body>
-    <h1>CTL Model Checker Train</h1>
-    <h1> </h1>
-    <div id="cy"></div>
-    <!-- Load application code at the end to ensure DOM is loaded -->
-    <script src="code.js"></script>
-    <div id="formulas">
-      <h1> F_1 = p0 </h1>
-      <h1> F_2 = !p0 </h1>
-      <h1> F_3 = EX(!(p0)) </h1>
-      <h1> F_4 = q1 </h1>
-      <h1> F_5 = t2 </h1>
-      <h1> F_6 = q1 OR t2 </h1>
-      <h1> F_7 = AF(q1 OR t2) </h1>
-      <h1> F_8 = E(EX(!p0) U AF(q1 OR t2)) </h1>
-    </div>
+    
+    <header>
+      <h2>CTL Model Checker Training</h2>
+    </header>
+
+    <section>
+      
+      <nav>
+        <div id="SubFormulas">
+          <h2> Sub Formulas: </h2>
+          <h3> F_1 = p0 </h3>
+          <h3> F_2 = !p0 </h3>
+          <h3> F_3 = EX(!(p0)) </h3>
+          <h3> F_4 = q1 </h3>
+          <h3> F_5 = t2 </h3>
+          <h3> F_6 = q1 OR t2 </h3>
+          <h3> F_7 = AF(q1 OR t2) </h3>
+          <h3> F_8 = E(EX(!p0) U AF(q1 OR t2)) </h3>
+        </div>        
+      </nav>
+      
+      <div class = article id="cy">
+        <!-- Load application code at the end to ensure DOM is loaded -->
+        <script src="code.js"></script>
+      </div>
+
+    </section>
+      
+    <footer>
+      <h2>Verify</h2>
+    </footer>
+
   </body>
 </html>
