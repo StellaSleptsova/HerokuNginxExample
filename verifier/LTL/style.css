@@ -1,0 +1,41 @@
+body {
+  font-family: helvetica, sans-serif;
+  font-size: 14px;
+}
+
+#cy {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+#cyltl {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+#ser {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+h1 {
+  opacity: 0.5;
+  font-size: 2em;
+}
+
+#hollow {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 2.5em;
+  z-index: 2;
+}

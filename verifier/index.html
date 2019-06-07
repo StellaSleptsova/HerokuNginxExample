@@ -1,21 +1,13 @@
 ﻿<!DOCTYPE>
-<!-- This code is for demonstration purposes only.  You should not hotlink to Github, Rawgit, or files from the Cytoscape.js documentation in your production apps. -->
 <html>
   <head>
     <title>Model Checker Algorithm Training</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet" />
 
-    <!-- For loading external data files -->
-    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=Promise,fetch"></script>
-    <script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
-    <script src="https://unpkg.com/popper.js@1.14.7/dist/umd/popper.js"></script>
-    <script src="cytoscape-popper.js"></script>
-    <script src="https://unpkg.com/tippy.js@4.0.1/umd/index.all.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/tippy.js@4.0.1/index.css" />
-
-    <!-- for testing with local version of cytoscape.js -->
-    <!--<script src="../cytoscape.js/build/cytoscape.js"></script>-->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   </head>
   <style>
     * {
@@ -28,12 +20,12 @@
     
     /* Style the header */
     header {
-      background-color: #75bbfd;
+      background-color: rgb(0, 84, 197);
       padding: 30px;
       height: 20%;
       text-align: center;
       font-size: 35px;
-      color: #000305;
+      color: rgb(255, 255, 255);
     }
     
     /* Create two columns/boxes that floats next to each other */
@@ -84,35 +76,75 @@
   <body>
     
     <header>
-      <h2>CTL Model Checker Training</h2>
+      <p style="font-size:150%; margin: 0%; color:rgb(255, 255, 255)">The Model Checker Algorithm Training</p>
+      <p id="question" style="font-size:80%;margin-top: 2%; color:rgb(89, 158, 255);"></p>    
     </header>
 
     <section>
-      
-      <nav>
-        <div id="SubFormulas">
-          <h2> Sub Formulas: </h2>
-          <h3> F_1 = p0 </h3>
-          <h3> F_2 = !p0 </h3>
-          <h3> F_3 = EX(!(p0)) </h3>
-          <h3> F_4 = q1 </h3>
-          <h3> F_5 = t2 </h3>
-          <h3> F_6 = q1 OR t2 </h3>
-          <h3> F_7 = AF(q1 OR t2) </h3>
-          <h3> F_8 = E(EX(!p0) U AF(q1 OR t2)) </h3>
-        </div>        
-      </nav>
-      
-      <div class = article id="cy">
-        <!-- Load application code at the end to ensure DOM is loaded -->
-        <script src="code.js"></script>
-      </div>
-
+        <p style="text-align:center;">
+            Welcome to the "The Model Cheking Training" site! </br> </br> </br>
+            Here we can check and training yourself on Model Checking algorithm. </br>
+      </p> 
+    </br>
+  </br>
+</br>
+</br>
+</br>
+</br>
+</br>
+      <p style="margin-left: 30%;text-align:left;">
+          1. "The CTL Model Checking": </br>
+          &emsp; 1.1. Tou have a random kripke structure M and a random CTL formula on the basis {EX, AF, EU}. </br>
+          &emsp; 1.2. You have to choose subformulas which are feasible on the given state of kripke structure M. </br>
+          &emsp; 1.3. Refresh page if you want to update source data.</br>
+      </p>
+        
+        <a 
+               style="background-color: rgb(0, 84, 197); 
+                      padding: 10px; 
+                      height: 10%; 
+                      text-align: center; 
+                      color: rgb(255, 255, 255);
+                      width:25%;
+                      font-size:150%;
+                      position: absolute; 
+                      margin-top: 2%; 
+                      left: 50%; 
+                      margin-right: -50%; 
+                      transform: translate(-50%, -50%)"
+              href="https://modelcheckeralgorithmtraining.herokuapp.com/ctl">
+              CTL Verifier Training
+            </a>
+    </a>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+    <p style="margin-left: 30%;text-align:left;">
+            2. "The LTL Model Checking": </br>
+            &emsp; 2.1. Tou have a random kripke structure M and a random LTL formula F. </br>
+            &emsp; 2.2. Kripke structure M and formula F already  have Buchi automation type.</br>
+            &emsp; 2.3. You can check feasibility finding necessary circle. </br>
+        </p>
+          
+        <a 
+                  style="background-color: rgb(0, 84, 197); 
+                         padding: 10px; 
+                         height: 10%; 
+                         text-align: center;
+                         color: rgb(255, 255, 255);
+                         width:25%;
+                         font-size:150%;
+                         position: absolute; 
+                         margin-top: 2%; 
+                         left: 50%; 
+                         margin-right: -50%; 
+                         transform: translate(-50%, -50%) "
+              href="https://modelcheckeralgorithmtraining.herokuapp.com/ltl">
+              LTL Verifier Training
+        </a>
     </section>
-      
-    <footer>
-      <h2>Verify</h2>
-    </footer>
 
   </body>
 </html>

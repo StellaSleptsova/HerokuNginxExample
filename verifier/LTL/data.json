@@ -1,0 +1,11 @@
+[ 
+  { "data": { "id": "1", "type": "heptagon", "label": "1"} }, 
+  { "data": { "id": "2",  "type": "heptagon","label": "2" } }, 
+  { "data": { "id": "3",  "type": "heptagon", "label": "3" } }, 
+  { "data": { "id": "4", "type": "heptagon", "label": "4"} }, 
+  { "data": { "id": "e1", "source": "1", "target": "2", "arrow": "triangle", "label":"{ }" } },  
+  { "data": { "id": "e0", "source": "2", "target": "3", "arrow": "triangle" , "label":"{p}" } }, 
+  { "data": { "id": "e3", "source": "3", "target": "4", "arrow": "triangle" , "label":"{ }" } }, 
+  { "data": { "id": "e4", "source": "4", "target": "1", "arrow": "triangle" , "label":"{p}" } }, 
+  { "data": { "id": "e5", "source": "2", "target": "4", "arrow": "triangle" , "label":"{p}" } }
+]

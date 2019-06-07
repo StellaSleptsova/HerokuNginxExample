@@ -4,28 +4,39 @@
     "text-valign": "center",
     "text-halign": "center",
     "width": 60,
-    "height": 60
+    "height": 60,
+    "background-color": "#8de761"
   }
 }, {
   "selector": "node[type]",
   "style": {
-    "label": "data(type)"
+    "shape": "data(type)"
   }
 },{
   "selector": "node[label]",
   "style": {
     "label": "data(label)"
   }
+},{
+  "selector": "node[color]",
+  "style": {
+    "color": "data(color)"
+  }
 }, {
   "selector": "edge",
   "style": {
     "width": 1,
     "curve-style": "bezier",
-    "control-point-step-size": 40
+    "control-point-step-size": 60
   }
 }, {
   "selector": "edge[arrow]",
   "style": {
     "target-arrow-shape": "data(arrow)"
+  }
+}, {
+  "selector": "edge[label]",
+  "style": {
+    "label": "data(label)"
   }
 }]

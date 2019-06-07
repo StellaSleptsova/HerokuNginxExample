@@ -1,0 +1,7 @@
+[ 
+  { "data": { "id": "1", "type": "ellipse", "label": "s"} }, 
+  { "data": { "id": "2",  "type": "heptagon","label": "r" } }, 
+  { "data": { "id": "e1", "source": "1", "target": "1", "arrow": "triangle", "label":"{ }, {p}" } },  
+  { "data": { "id": "e0", "source": "1", "target": "2", "arrow": "triangle" , "label":"{ }" } }, 
+  { "data": { "id": "e3", "source": "2", "target": "2", "arrow": "triangle" , "label":"{ }" } }
+]
