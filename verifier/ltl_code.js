@@ -54,7 +54,7 @@ function renderGraphKsData(data) {
              name: 'grid',
              columns: 2
             },
-            style: fetch('cy-style.json').then(toJson),
+            style: fetch('ltl_cy-style.json').then(toJson),
             elements: data
   });
 };
@@ -129,7 +129,7 @@ function renderGraphLtlData(data) {
              name: 'grid',
              columns: 2
             },
-            style: fetch('cy-style.json').then(toJson),
+            style: fetch('ltl_cy-style.json').then(toJson),
             elements: data
   });
 };

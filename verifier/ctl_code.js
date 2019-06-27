@@ -29,7 +29,7 @@ $(document).ready(function () {
       //renderFormulaData(data["formula"]);
       renderSubFormulaData(data["formulas"]);
       renderGraphData(data["ks"]);
-      renderQuestion(data["question"])
+      renderQuestion(data["question"]);
       //$("#backendConnection").addClass("hidden");
   });
   query.fail(function (jqXHR, errtext) {
@@ -47,7 +47,7 @@ function renderGraphData(data) {
              name: 'grid',
              columns: 2
             },
-            style: fetch('cy-style.json').then(toJson),
+            style: fetch('ctl_cy-style.json').then(toJson),
             elements: data
   });
 };
